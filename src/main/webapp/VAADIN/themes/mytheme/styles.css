@@ -15082,8 +15082,12 @@ div.v-layout.v-horizontal.v-widget {
 	overflow: scroll;
 }
 
-.mytheme .principal[width-range~="0-550px"] {
+.mytheme .principal[width-range~="0-650px"] {
 	background-image: none;
+}
+
+.mytheme .principal[width-range~="0-650px"] .login-form {
+	width: unset;
 }
 
 .mytheme .contenedor {
@@ -15168,7 +15172,7 @@ div.v-layout.v-horizontal.v-widget {
 	font-weight: 500;
 	padding-top: 2px;
 	flex-grow: 1;
-	padding-right: 99px;
+	padding-right: 9px;
 }
 
 .mytheme .chk-recuerda:after {
@@ -15176,6 +15180,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .btn-ayuda {
+	float: right;
 	vertical-align: middle;
 	color: #b3b3b3;
 	font-size: 13px;
@@ -15185,7 +15190,6 @@ div.v-layout.v-horizontal.v-widget {
 	border: 0px;
 	box-shadow: inset 0 0px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	alignment: right;
 }
 
 .mytheme .btn-ayuda:hover {
