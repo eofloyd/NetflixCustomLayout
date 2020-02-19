@@ -5,7 +5,7 @@ jdk: openjdk8
 script:
  - echo "Hola travis"
  - mvn package
- - chmod 400 acceso_deployment.pem
+ - chmod 400 acceso-deployment.pem
  - ssh-keyscan -H 3.134.49.225 >> ~/.ssh/known_hosts
  - ssh-keyscan -H ec2-3-134-49-225.us-east-2.compute.amazonaws.com >> ~/.ssh/known_hosts
- - scp -i acceso_deployment.pem target/*.war ubuntu@3.134.49.225:/tmp
+ - scp -i acceso-deployment.pem target/*.war ubuntu@3.134.49.225:/tmp
